@@ -5,7 +5,7 @@ from os import path, walk
 import sys
 from setuptools import setup, find_packages
 
-NAME = "Orange3-Educational"
+NAME = "Orange3-Educational-zh"
 
 VERSION = "0.2.1"
 
@@ -33,7 +33,7 @@ DATA_FILES = [
 ]
 
 INSTALL_REQUIRES = [
-    'Orange3 >=3.21.0',
+    'Orange3-zh >=3.21.0',
     'BeautifulSoup4',
 ]
 
@@ -55,7 +55,7 @@ ENTRY_POINTS = {
         # Syntax: category name = path.to.package.containing.widgets
         # Widget category specification can be seen in
         #    orangecontrib/example/widgets/__init__.py
-        'Educational = orangecontrib.educational.widgets',
+        '教育(Educational) = orangecontrib.educational.widgets',
     ),
 
     # Register widget help
@@ -95,7 +95,7 @@ def include_documentation(local_dir, install_dir):
 
 
 if __name__ == '__main__':
-    include_documentation('doc/build/htmlhelp', 'help/orange3-educational')
+    # include_documentation('doc/build/htmlhelp', 'help/orange3-educational')
     setup(
         name=NAME,
         version=VERSION,
